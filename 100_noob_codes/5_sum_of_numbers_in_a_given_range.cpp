@@ -1,3 +1,8 @@
+/*
+Enter the lower limit: 5
+Enter the upper limit: 7
+The Sum of Natural Numbers from 5to 7 is 18
+*/
 #include<iostream>
 using namespace std;
 int main(){

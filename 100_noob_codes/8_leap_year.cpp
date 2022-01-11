@@ -9,6 +9,12 @@ but these centurial years are leap years if they are exactly divisible by 400
 */
 //  if(year % 400 == 0 || (year % 4 == 0  && year % 100 != 0))
 
+/*
+Enter Year: 
+1679
+1679 is not a Leap Year
+*/
+
 #include<iostream>
 using namespace std;
 int main(){
