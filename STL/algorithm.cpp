@@ -1,4 +1,5 @@
-Algo:
+// Algo: in STL
+//Note : Binary search will only work with sorted array
 
 #include <iostream>
 #include<algorithm>
@@ -14,6 +15,7 @@ int main() {
   v.push_back(6);
   v.push_back(7);
 
+  //searching for element 6 
   cout<<"Finding 6-> "<<binary_search(v.begin(),v.end(),6)<<endl;
 
   cout<<"lower bound-> "<<lower_bound(v.begin(),v.end(),6)-v.begin()<<endl;
@@ -22,27 +24,30 @@ int main() {
   int a =3;
   int b =5;
 
-  cout<<"max -> "<<max(a,b);
+  cout<<"max -> "<<max(a,b); //output 5
 
-  cout<<"min -> "<<min(a,b);
+  cout<<"min -> "<<min(a,b); //output 3
 
   swap(a,b);
-  cout<<endl<<"a-> "<<a<<endl;
+  cout<<endl<<"a-> "<<a<<endl; // after swapping a is 5
 
   string abcd = "abcd";
   reverse(abcd.begin(),abcd.end());
-  cout<<"string-> "<<abcd<<endl;
+  cout<<"string-> "<<abcd<<endl; // output : dcba
 
-  rotate(v.begin(),v.begin()+1,v.end());
+  rotate(v.begin(),v.begin()+1,v.end());//after rotating 3671
   cout<<"after rotate"<<endl;
   for(int i:v){
     cout<<i<<" ";
   }
 
-  sort(v.begin(),v.end());
+  sort(v.begin(),v.end()); //after sorting 13
   cout<<"after sorting"<<endl;
-for(int i:v){
+  
+  for(int i:v){
     cout<<i<<" ";
+
   }
+    cout<<endl;
 
 }

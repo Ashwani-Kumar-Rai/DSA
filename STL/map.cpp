@@ -1,5 +1,6 @@
-
-Map:
+// Map: me hamara data key value k form me store hota hain
+// All keys are unique
+// and one key will point to only one value
 
 #include <iostream>
 #include<map> 
@@ -8,9 +9,9 @@ using namespace std;
 int main() {
   map<int,string> m;
 
-  m[1]= "babbar";
+  m[1]= "Ashwani";
   m[13]="kumar";
-  m[2]="love";
+  m[2]="Rai";
 
   m.insert( {5,"bheem"});
 
