@@ -1,3 +1,6 @@
+//  By Ashwani Kumar Rai
+// Program to find whether a number is prime or not
+
 #include<iostream>
 using namespace std;
 int main(){
@@ -6,20 +9,17 @@ int main(){
     cout<<"Enter the number \n ";
     cin>>num;
 
-    for(int i=1;i<=num;i++)
+    for(int i=2;i<num;i++)
     {
         if(num%i==0)
-        {
-            count++;
-        }    
-    }
+        count++;
+    }}
 
-    if(count==2){
-        cout<<num<<" is a prime number \n";
-    }
+    if(count==0)
+    cout<<"The number is Prime \n ";
+    else
+    cout<<"The number is not prime \n";
+
     
-    else{
-        cout<<"\n Not a Prime number \n";
-    }
     return 0;
 }
