@@ -1,4 +1,4 @@
-// Program to Check whether a number is Even or Odd
+// Program to Check whether a number is Even or odd
 // By Ashwani Kumar Rai
 #include<iostream>
 using namespace std;
