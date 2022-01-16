@@ -1,6 +1,52 @@
+//By Ashwani Kumar Rai
+// Program to check Armstrong number in a given range
 #include<iostream>
 using namespace std;
 
+void armstrong(int num)
+{   int rem=0,sum=0,store;
+     store=num;
+    
+    while(num>0)
+    {
+        rem=num%10;
+        rem=rem*rem*rem;
+        sum=sum+rem;
+        num=num/10;
+    }
+    
+    if(sum==store)
+    cout<<store<<endl;
+
+}
+
+
+int main(){
+
+    int num ,lower,upper;
+    cout<<"Enter the lower and upper limit of range : \n";
+    cin>>lower>>upper;
+    
+    for(int i=lower;i<=upper;i++)
+    {
+        armstrong(i);
+    }
+
+    return 0;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+/*
 void armstrong(int num)
 {
     int r=0,sum=0,c,store=num;
@@ -35,4 +81,4 @@ int main(){
 
  
     
-    
+    */

@@ -1,3 +1,6 @@
+// By Ashwani Kumar Rai
+// Program to check whether two numbers are Friendly Pair
+
 /*
 
 Friendly Pair(Amicable number) or Not

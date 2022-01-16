@@ -1,5 +1,45 @@
+//  By Ashwani Kumar Rai
+// Program to check palindrome or not
 // 121 on reversing we get 121 so it is a palindrome
 
+
+#include<iostream>
+using namespace std;
+int main()
+{
+    int num,store,reverse=0,rem;
+    cout<<"Enter the number : ";
+    cin>>num;
+    store=num;
+
+    while(num>0)
+    {
+        rem=num%10; //to get the last digit
+        reverse=(reverse*10)+rem; // to construct each digit of reverse
+        num=num/10; // to eliminate last digit
+    }
+    if(store==reverse)
+    cout<<"The number is Palindrome "<<endl;
+    else
+    cout<<"The number is Not a Palindrome "<<endl;
+
+    return 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
 #include<iostream>
 using namespace std;
 int main(){
@@ -26,3 +66,5 @@ int main(){
     
     return 0;
 }
+
+*/

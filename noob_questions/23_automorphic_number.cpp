@@ -1,11 +1,45 @@
+// By Ashwani Kumar Rai
+// Program to check whether a number is a Automorphic Number or not
+
 /*
 Example: 25
 Square of 25 = 625
 The last digits of square equals to the number,  25 is an Automorphic number.
 */
+
 //Enter a positive number to check: 25
 //25 is an Automorphic number.
 
+
+
+#include<iostream>
+using namespace std;
+int main()
+{
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
 #include<iostream>
 using namespace std;
 int main(){
@@ -35,3 +69,5 @@ int main(){
 
     return 0;
 }
+
+*/

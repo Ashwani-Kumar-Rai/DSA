@@ -1,9 +1,56 @@
+// By Ashwani Kumar Rai
+// Program to check whether a number is a Strong Number or not
+
 /*
 For Example:145
 
-Sum of factorial of digits of number   = 1! x 4! x 5!=  145
+Sum of factorial of digits of number   = 1! + 4! + 5!=  145
+
+Input: 145    Output :   145 is a Strong Number
+
 */
-// Input: 145    Output :   145 is a Strong Number
+#include<iostream>
+using namespace std;
+
+int factorial(int rem)
+{   int fact=1;
+      for(int i=rem;i>0;i--)
+    {
+        fact=fact*i;
+    }
+    
+    return fact;
+
+}
+
+int main()
+{   int num,rem,fact,result=0;
+
+    cout<<"Enter number : \n";
+    cin>>num;
+    int temp=num;
+    while(num>0)
+    {
+        rem=num%10;
+        fact=factorial(rem);
+        result=result+fact;
+        num=num/10;
+    }
+   
+    if(temp==result)
+    cout<<"Strong Number \n";
+    else
+    cout<<"Not a Strong Number \n";
+
+    return 0;
+}
+
+
+
+
+
+
+/*
 
 #include<iostream>
 using namespace std;
@@ -39,3 +86,5 @@ int main(){
     
     return 0;
 }
+
+*/
