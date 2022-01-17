@@ -9,7 +9,6 @@ For:220
 divisors : 1,2,4,5,10,11,20,22,44,55 and 110 
 sum : 284
 
-
 for: 284
 divisors : 1,2,4,71 and 142
 sum : 220
@@ -20,6 +19,51 @@ sum : 220
 //    Enter first number : 220
 //    Enter second number : 284
 //    Fiendly Pair(220,284)
+
+#include<iostream>
+using namespace std;
+
+int divisor_sum(int num)
+{   int sum=0;
+    
+    for(int i=1;i<num;i++)
+    {
+        if(num%i==0)
+        {
+            sum=sum+i;
+        }
+    }
+
+    return sum;
+}
+
+int main()
+{
+    int num1,num2,res1,res2;
+    cout<<"Enter the two numbers \n";
+    cin>>num1>>num2;
+
+    res1=divisor_sum(num1);
+    res2=divisor_sum(num2);
+    
+    if((res1==num2)&&(res2==num1))
+    cout<<" Friendly Pair \n ";
+    else
+    cout<<" Not Friendly Pair \n";
+    
+    return 0;
+}
+
+
+
+
+
+
+
+
+
+
+/*
 
 #include<iostream>
 using namespace std;
@@ -61,3 +105,8 @@ int main(){
     
     return 0;
 }
+
+
+*/
+
+
