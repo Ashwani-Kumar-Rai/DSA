@@ -1,11 +1,11 @@
 // By Ashwani Kumar Rai
-// Find the sum of elements in an array
+// Find the frequency of every elements in an array
 
 #include<iostream>
 using namespace std;
 int main()
 {
-    int size,sum=0;
+    int flag=0,size,frequency;
     cout<<"Enter the size of the array\n";
     cin>>size;
     int arr[size];
@@ -15,12 +15,18 @@ int main()
         cin>>arr[i];
     
     }
-    
-    for(int i=0;i<size;i++)
-    {   
-        sum=sum+arr[i];
+    for(int i=1;i<=size;i++)
+    {
+          for(int j=1;j<=size;j++)
+          {
+              if(arr[i]==arr[j])
+              {
+                  flag=flag+1;
+              }
+          }  
+          cout<<i<<" occurs : "<<flag<<" number of times"<<endl;
+
     }
-    cout<<"The sum of  element in the arrray is : "<<sum<<endl;
-        
-   return 0;
+
+    return 0;
 }
